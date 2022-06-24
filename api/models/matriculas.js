@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       status: DataTypes.STRING,
     },
-    {}
+    { paranoide: true }
   );
   Matriculas.associate = function (models) {
     Matriculas.belongsTo(models.Pessoas, {
