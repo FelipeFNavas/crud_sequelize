@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
   );
   Niveis.associate = function (models) {
     Niveis.hasMany(models.Turmas, {
-      forekey: "nivel_id",
+      foreignKey: "nivel_id",
     });
   };
   return Niveis;

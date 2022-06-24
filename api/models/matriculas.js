@@ -9,10 +9,10 @@ module.exports = (sequelize, DataTypes) => {
   );
   Matriculas.associate = function (models) {
     Matriculas.belongsTo(models.Pessoas, {
-      forekey: "estudante_id",
+      foreignKey: "estudante_id",
     });
     Matriculas.belongsTo(models.Turmas, {
-      forekey: "turma_id",
+      foreignKey: "turma_id",
     });
   };
   return Matriculas;

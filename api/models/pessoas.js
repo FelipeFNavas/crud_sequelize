@@ -5,12 +5,12 @@ module.exports = (sequelize, DataTypes) => {
     {
       nome: {
         type: DataTypes.STRING,
-        validate: {
-          funcaoValidadora: function (dado) {
-            if (dado.lenght < 3)
-              throw new Error("Nome deve ter mais de 3 caracteres");
-          },
-        },
+        // validate: {
+        //   funcaoValidadora: function (dado) {
+        //     if (dado.lenght < 3)
+        //       throw new Error("Nome deve ter mais de 3 caracteres");
+        //   },
+        // },
       },
       ativo: DataTypes.BOOLEAN,
       email: {
@@ -31,10 +31,12 @@ module.exports = (sequelize, DataTypes) => {
   );
   Pessoas.associate = function (models) {
     Pessoas.hasMany(models.Turmas, {
-      forekey: "docente_id",
+      foreignKey: "docente_id",
     });
     Pessoas.hasMany(models.Matriculas, {
-      forekey: "estudante_id",
+      foreignKey: "estudante_id",
+      scope: { status: "confirmado" },
+      as: "aulasMatriculadas",
     });
   };
   return Pessoas;

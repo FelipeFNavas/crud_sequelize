@@ -9,13 +9,13 @@ module.exports = (sequelize, DataTypes) => {
   );
   Turmas.associate = function (models) {
     Turmas.hasMany(models.Matriculas, {
-      forekey: "turma_id",
+      foreignKey: "turma_id",
     });
     Turmas.belongsTo(models.Pessoas, {
-      forekey: "docente_id",
+      foreignKey: "docente_id",
     });
     Turmas.belongsTo(models.Niveis, {
-      forekey: "nivel_id",
+      foreignKey: "nivel_id",
     });
   };
   return Turmas;
