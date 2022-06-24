@@ -1,5 +1,5 @@
-// import database from "../models/index.js";
 const database = require("../models/index.js");
+const Sequelize = require("sequelize");
 
 class PessoasController {
   static async getAllActivePeople(req, res) {
@@ -103,6 +103,45 @@ class PessoasController {
       });
       const registration = await person.getAulasMatriculadas();
       return res.status(200).json(registration);
+    } catch (err) {
+      return res.status(500).json({
+        error: err.message,
+      });
+    }
+  }
+
+  static async getRegistrationByTeam(req, res) {
+    const { id } = req.params;
+    try {
+      const allRegistration = await database.Matriculas.findAndCountAll({
+        where: {
+          turma_id: Number(id),
+          status: "confirmado",
+        },
+        limit: 20,
+        order: [["estudante_id", "ASC"]],
+      });
+      return res.status(200).json(allRegistration);
+    } catch (err) {
+      return res.status(500).json({
+        error: err.message,
+      });
+    }
+  }
+
+  static async getFullTeam(req, res) {
+    const fullTeam = 2;
+    try {
+      const allTeams = await database.Matriculas.findAndCountAll({
+        where: {
+          status: "confirmado",
+        },
+        attributes: ["turma_id"],
+        group: ["turma_id"],
+        having: Sequelize.literal(`count(turma_id) >= ${fullTeam}`),
+      });
+
+      return res.status(200).json(allTeams.count);
     } catch (err) {
       return res.status(500).json({
         error: err.message,
