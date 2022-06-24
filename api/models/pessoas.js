@@ -3,9 +3,20 @@ module.exports = (sequelize, DataTypes) => {
   const Pessoas = sequelize.define(
     "Pessoas",
     {
-      nome: DataTypes.STRING,
+      nome: {
+        type: DataTypes.STRING,
+        validate: {
+          funcaoValidadora: function (dado) {
+            if (dado.lenght < 3)
+              throw new Error("Nome deve ter mais de 3 caracteres");
+          },
+        },
+      },
       ativo: DataTypes.BOOLEAN,
-      email: DataTypes.STRING,
+      email: {
+        type: DataTypes.STRING,
+        validate: { isEmail: { args: true, msg: "Email inválido" } },
+      },
       role: DataTypes.STRING,
     },
     {
