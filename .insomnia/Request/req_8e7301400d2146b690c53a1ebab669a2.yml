@@ -1,0 +1,22 @@
+_id: req_8e7301400d2146b690c53a1ebab669a2
+type: Request
+parentId: fld_895b6fdfc13b47ba96758178a496119c
+modified: 1656029714387
+created: 1656029696984
+url: "{{ _.url }}/{{ _.resource }}/{% prompt 'id_turma', 'id_turma', '', '',
+  false, true %}"
+name: pega-uma-turma
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1656029496914
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

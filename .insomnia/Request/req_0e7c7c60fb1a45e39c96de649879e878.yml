@@ -1,0 +1,21 @@
+_id: req_0e7c7c60fb1a45e39c96de649879e878
+type: Request
+parentId: fld_895b6fdfc13b47ba96758178a496119c
+modified: 1656089647834
+created: 1656029616996
+url: "{{ _.url }}/{{ _.resource }}"
+name: pega-todas-turmas
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1656029616996
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,22 @@
+_id: req_689763d876104f5ba7520b3908fe7517
+type: Request
+parentId: fld_46f51dc2045e4cf8bca4654e4220e752
+modified: 1656082623090
+created: 1656082611157
+url: "{{ _.url }}/{{ _.resource }}/{% prompt 'id_pessoa', 'id_pessoa', '', '',
+  false, true %}/matriculas"
+name: pega-todas-matriculas
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1655760182073.875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

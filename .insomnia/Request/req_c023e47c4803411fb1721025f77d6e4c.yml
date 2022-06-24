@@ -1,0 +1,21 @@
+_id: req_c023e47c4803411fb1721025f77d6e4c
+type: Request
+parentId: fld_895b6fdfc13b47ba96758178a496119c
+modified: 1656029743602
+created: 1656029734466
+url: "{{ _.url }}/{{ _.resource }}"
+name: cria-turma
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1656029436873
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

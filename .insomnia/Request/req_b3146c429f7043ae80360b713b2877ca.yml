@@ -1,0 +1,22 @@
+_id: req_b3146c429f7043ae80360b713b2877ca
+type: Request
+parentId: fld_46f51dc2045e4cf8bca4654e4220e752
+modified: 1656033784908
+created: 1656033637788
+url: "{{ _.url }}/{{ _.resource }}/{% prompt 'id_pessoa', 'id_pessoa', '', '',
+  false, true %}/restaura"
+name: restaura-pessoa
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1655625584644.8125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

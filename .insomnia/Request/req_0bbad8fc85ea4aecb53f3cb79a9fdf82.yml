@@ -1,0 +1,22 @@
+_id: req_0bbad8fc85ea4aecb53f3cb79a9fdf82
+type: Request
+parentId: fld_46f51dc2045e4cf8bca4654e4220e752
+modified: 1656093809706
+created: 1656093695401
+url: "{{ _.url }}/{{ _.resource }}/{% prompt 'pessoa_id', 'pessoa_id', '', '',
+  false, true %}/cancela"
+name: cancela-pessoa-e-matriculas
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1655713072991.2031
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

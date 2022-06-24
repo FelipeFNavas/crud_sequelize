@@ -1,0 +1,21 @@
+_id: req_374146491544457591c073a194eeb429
+type: Request
+parentId: fld_ec4e0312058045119ae2d4d484ba7344
+modified: 1656029156863
+created: 1655598665219
+url: "{{ _.url }}/{{ _.resource }}"
+name: pega-todos-niveis
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1655598665219
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,32 @@
+_id: req_682d78aac62349a2920d11aaa197b65c
+type: Request
+parentId: fld_46f51dc2045e4cf8bca4654e4220e752
+modified: 1656080766160
+created: 1656029504842
+url: "{{ _.url }}/{{ _.resource }}"
+name: cria-pessoa
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    		"nome": "J",
+    		"ativo": true,
+    		"email": "felipe@felipe.com",
+    		"role": "estudante"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_832bb5debe0a44e9acab1ab3dbcf6443
+authentication: {}
+metaSortKey: -1655706343122.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

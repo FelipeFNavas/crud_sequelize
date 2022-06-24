@@ -1,0 +1,21 @@
+_id: req_2a8cf8493cc54164a613785c2b2e044a
+type: Request
+parentId: fld_46f51dc2045e4cf8bca4654e4220e752
+modified: 1656067873333
+created: 1656029376832
+url: "{{ _.url }}/{{ _.resource }}"
+name: pega-todas-pessoas-ativas
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1656029376832
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

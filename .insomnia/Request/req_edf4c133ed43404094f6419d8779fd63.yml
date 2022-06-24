@@ -1,0 +1,22 @@
+_id: req_edf4c133ed43404094f6419d8779fd63
+type: Request
+parentId: fld_46f51dc2045e4cf8bca4654e4220e752
+modified: 1656091858801
+created: 1656090667696
+url: "{{ _.url }}/{{ _.resource }}/matriculas/{% prompt 'turma_id', 'turma_id',
+  '', '', false, true %}/confirmados"
+name: pega-alunos-turma
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1655733262598.0625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

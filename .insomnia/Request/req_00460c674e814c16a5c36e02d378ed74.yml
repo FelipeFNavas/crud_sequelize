@@ -1,0 +1,22 @@
+_id: req_00460c674e814c16a5c36e02d378ed74
+type: Request
+parentId: fld_46f51dc2045e4cf8bca4654e4220e752
+modified: 1656029489882
+created: 1656029469664
+url: "{{ _.url }}/{{ _.resource }}/{% prompt 'id_pessoa', 'id_pessoa', '', '',
+  false, true %}"
+name: pega-uma-pessoa
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1655814021025.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

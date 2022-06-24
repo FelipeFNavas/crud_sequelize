@@ -1,0 +1,21 @@
+_id: req_d827211394684127a9d2a7e93511fec2
+type: Request
+parentId: fld_46f51dc2045e4cf8bca4654e4220e752
+modified: 1656098253993
+created: 1656068718310
+url: "{{ _.url }}/{{ _.resource }}/todass"
+name: pega-todas-pessoas
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1655921698928.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

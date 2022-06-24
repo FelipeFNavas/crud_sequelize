@@ -1,0 +1,21 @@
+_id: req_de2ac3058ab84b4cb6a25daea065c6ef
+type: Request
+parentId: fld_46f51dc2045e4cf8bca4654e4220e752
+modified: 1656092616537
+created: 1656091868737
+url: "{{ _.url }}/{{ _.resource }}/matriculas/fullTeam"
+name: pega-todas-turmas-lotadas
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1655719802860.1562
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

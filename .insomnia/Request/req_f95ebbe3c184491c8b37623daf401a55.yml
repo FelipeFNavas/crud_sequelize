@@ -1,0 +1,22 @@
+_id: req_f95ebbe3c184491c8b37623daf401a55
+type: Request
+parentId: fld_895b6fdfc13b47ba96758178a496119c
+modified: 1656029779454
+created: 1656029775901
+url: "{{ _.url }}/{{ _.resource }}/{% prompt 'id_turma', 'id_turma', '', '',
+  false, true %}"
+name: deleta-turma
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1656029406827.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

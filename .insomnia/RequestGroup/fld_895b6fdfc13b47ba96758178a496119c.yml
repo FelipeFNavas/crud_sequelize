@@ -1,0 +1,13 @@
+_id: fld_895b6fdfc13b47ba96758178a496119c
+type: RequestGroup
+parentId: wrk_9f4954af78c84093ba8896f349bad64a
+modified: 1656029613469
+created: 1656029577391
+name: turmas
+description: ""
+environment:
+  resource: turmas
+environmentPropertyOrder:
+  "&":
+    - resource
+metaSortKey: -1656028864534

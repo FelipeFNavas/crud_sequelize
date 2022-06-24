@@ -1,0 +1,22 @@
+_id: req_26ad0de466ac42bab8652b657de1ad9d
+type: Request
+parentId: fld_ec4e0312058045119ae2d4d484ba7344
+modified: 1656029345032
+created: 1656029341770
+url: "{{ _.url }}/{{ _.resource }}/{% prompt 'nivel_id', 'nivel_id', '', '',
+  false, true %}"
+name: deleta-nivel
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1655598665019
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

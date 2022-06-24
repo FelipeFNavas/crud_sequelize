@@ -1,0 +1,30 @@
+_id: req_efd51da86886437a94ddc6a77626abde
+type: Request
+parentId: fld_46f51dc2045e4cf8bca4654e4220e752
+modified: 1656079608680
+created: 1656029524085
+url: "{{ _.url }}/{{ _.resource }}/{% prompt 'id_pessoa', 'id_pessoa', '', '',
+  false, true %}"
+name: atualiza-pessoa
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"ativo": false
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_f622655646ac4d1eb23562a0bb2aeb94
+authentication: {}
+metaSortKey: -1655652504170.625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
