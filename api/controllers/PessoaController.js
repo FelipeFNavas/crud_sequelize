@@ -148,6 +148,33 @@ class PessoasController {
       });
     }
   }
+
+  static async cancelPessoa(req, res) {
+    const { id } = req.params;
+    try {
+      database.sequelize.transaction(async (transacao) => {
+        await database.Pessoas.update(
+          { ativo: false },
+          { where: { id: Number(id) } },
+          { transaction: transacao }
+        );
+
+        await database.Matriculas.update(
+          { status: "cancelado" },
+          { where: { estudante_id: Number(id) } },
+          { transaction: transacao }
+        );
+      });
+
+      return res
+        .status(200)
+        .json({ message: `Matriculas do estudante ${id} canceladas` });
+    } catch (err) {
+      return res.status(500).json({
+        error: err.message,
+      });
+    }
+  }
 }
 
 module.exports = PessoasController;

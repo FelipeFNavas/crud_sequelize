@@ -13,6 +13,7 @@ router.get(
 );
 router.get("/pessoas/matriculas/fullTeam", PessoaController.getFullTeam);
 router.post("/pessoas", PessoaController.createPerson);
+router.post("/pessoas/:id/cancela", PessoaController.cancelPessoa);
 router.put("/pessoas/:id", PessoaController.updatePerson);
 router.delete("/pessoas/:id", PessoaController.deletePerson);
 router.post("/pessoas/:id/restaura", PessoaController.restorePeople);
