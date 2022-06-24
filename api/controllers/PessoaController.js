@@ -26,6 +26,24 @@ class PessoasController {
     }
   }
 
+  static async restorePeople(req, res) {
+    try {
+      const { id } = req.params;
+
+      await database.Pessoas.restore({
+        where: { id: Number(id) },
+      });
+
+      return res
+        .status(200)
+        .json({ messagem: `Pessoa com o id ${id} restaurada com sucesso` });
+    } catch (err) {
+      return res.status(500).json({
+        error: err.message,
+      });
+    }
+  }
+
   static async createPerson(req, res) {
     try {
       const person = await database.Pessoas.create(req.body);
