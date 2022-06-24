@@ -1,0 +1,22 @@
+_id: req_3dc7affff9c24d4f8672b979d5d01558
+type: Request
+parentId: fld_ec4e0312058045119ae2d4d484ba7344
+modified: 1656029319523
+created: 1656029292554
+url: "{{ _.url }}/{{ _.resource }}/{% prompt 'nivel_id', 'nivel_id', '', '',
+  false, true %}"
+name: atualiza-nivel
+description: ""
+method: PUT
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1655598665069
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

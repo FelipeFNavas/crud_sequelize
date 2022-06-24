@@ -1,0 +1,21 @@
+_id: req_5e4a346590e64adea1e2d8c8fa008127
+type: Request
+parentId: fld_ec4e0312058045119ae2d4d484ba7344
+modified: 1656029259343
+created: 1656029240447
+url: "{{ _.url }}/{{ _.resource }}"
+name: cria-nivel
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1655598665119
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

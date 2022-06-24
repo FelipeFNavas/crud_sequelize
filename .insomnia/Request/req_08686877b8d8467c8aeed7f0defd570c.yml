@@ -1,0 +1,22 @@
+_id: req_08686877b8d8467c8aeed7f0defd570c
+type: Request
+parentId: fld_ec4e0312058045119ae2d4d484ba7344
+modified: 1656029193282
+created: 1656029174174
+url: "{{ _.url }}/{{ _.resource }}/{% prompt 'id_nivel', 'id_nivel', '', '',
+  false, true %}"
+name: pega-um-nivel
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1655598665169
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

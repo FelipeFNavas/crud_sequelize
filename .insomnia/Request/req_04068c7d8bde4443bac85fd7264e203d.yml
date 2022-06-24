@@ -1,0 +1,22 @@
+_id: req_04068c7d8bde4443bac85fd7264e203d
+type: Request
+parentId: fld_46f51dc2045e4cf8bca4654e4220e752
+modified: 1656029564032
+created: 1656029560550
+url: "{{ _.url }}/{{ _.resource }}/{% prompt 'id_pessoa', 'id_pessoa', '', '',
+  false, true %}"
+name: deleta-pessoa
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1655625584694.8125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

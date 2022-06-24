@@ -1,0 +1,22 @@
+_id: req_f3b0a361b44840ee89707a454ee4b33d
+type: Request
+parentId: fld_895b6fdfc13b47ba96758178a496119c
+modified: 1656029767956
+created: 1656029761132
+url: "{{ _.url }}/{{ _.resource }}/{% prompt 'id_turma', 'id_turma', '', '',
+  false, true %}"
+name: atualiza-turma
+description: ""
+method: PUT
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1656029436823
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
