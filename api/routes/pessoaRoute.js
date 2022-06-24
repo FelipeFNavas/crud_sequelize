@@ -6,6 +6,7 @@ const router = Router();
 router.get("/pessoas", PessoaController.getAllActivePeople);
 router.get("/pessoas/todas", PessoaController.getAllPeople);
 router.get("/pessoas/:id", PessoaController.getOnePerson);
+router.get("/pessoas/:id/matriculas", PessoaController.getRegistration);
 router.post("/pessoas", PessoaController.createPerson);
 router.put("/pessoas/:id", PessoaController.updatePerson);
 router.delete("/pessoas/:id", PessoaController.deletePerson);

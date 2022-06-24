@@ -94,6 +94,21 @@ class PessoasController {
       });
     }
   }
+
+  static async getRegistration(req, res) {
+    const { id: estudanteId } = req.params;
+    try {
+      const person = await database.Pessoas.findOne({
+        where: { id: Number(estudanteId) },
+      });
+      const registration = await person.getAulasMatriculadas();
+      return res.status(200).json(registration);
+    } catch (err) {
+      return res.status(500).json({
+        error: err.message,
+      });
+    }
+  }
 }
 
 module.exports = PessoasController;
